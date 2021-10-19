@@ -16,7 +16,7 @@ spec:
         app: events-internal
     spec:
       containers:
-      - image: kgangi/sample-internal:v0.2
+      - image: kcgjr/sample-internal:v0.2
         name: events-internal
         imagePullPolicy: "Always"
         resources:
