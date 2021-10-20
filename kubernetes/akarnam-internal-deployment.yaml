@@ -16,7 +16,7 @@ spec:
         app: events-internal
     spec:
       containers:
-      - image: adkarnam/internal_app_nodejs:v0.1
+      - image: akarnam/internal_app_nodejs:v0.1
         name: events-internal
         imagePullPolicy: "Always"
         resources:
