@@ -10,7 +10,7 @@ const bodyParser = require('body-parser');
 
 // create the server
 const app = express(); // Compliant
-app.disable("x-powered-by");
+//Fix sec issue app.disable("x-powered-by");
 
 // the backend server will parse json, not a form request
 app.use(bodyParser.json());
@@ -18,6 +18,7 @@ app.use(bodyParser.json());
 // allow AJAX calls from 3rd party domains
 app.use(function (req, res, next) {
 	res.header("Access-Control-Allow-Origin", "*");
+    //Fix CORS res.header("Access-Control-Allow-Origin", "*");
     res.header('Access-Control-Allow-Methods', 'PUT, POST, PATCH, MERGE, GET, DELETE, OPTIONS');
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
