@@ -10,7 +10,7 @@ const bodyParser = require('body-parser');
 
 // create the server
 const app = express(); // Compliant
-//Fix sec issue app.disable("x-powered-by");
+app.disable("x-powered-by"); //Fix sec issue
 
 // the backend server will parse json, not a form request
 app.use(bodyParser.json());
