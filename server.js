@@ -9,7 +9,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 // create the server
-const app = express();
+const app = express(); // Compliant
+app.disable("x-powered-by");
 
 // the backend server will parse json, not a form request
 app.use(bodyParser.json());
